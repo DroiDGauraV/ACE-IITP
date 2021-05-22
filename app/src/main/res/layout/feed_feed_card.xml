@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/view_img_pfp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="categoryLogo"
+                android:src="@drawable/mountain"
+                app:riv_corner_radius="20dp"/>
+
+            <TextView
+                android:id="@+id/view_tv_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/view_img_pfp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="Title Goes here"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/view_tv_op"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_tv_Title"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/view_img_pfp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="Secondary Text" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/view_img_post"
+            android:layout_width="match_parent"
+            android:layout_height="231dp"
+            android:contentDescription="imagePost"
+            app:srcCompat="@drawable/image1"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/view_tv_post_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="#262626"
+            android:text="LinesLinesLinesLinesLinesLinesLinesLinesLinesLinesLinesLinesLinesLinesLinesLinesLines"
+            />
+
+        <LinearLayout
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/feed_btn_fb"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Facebook"
+                app:srcCompat="@drawable/ic_facebook"/>
+
+            <ImageView
+                android:id="@+id/feed_btn_insta"
+                android:backgroundTint="#fff"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_instagram_sketched"
+                android:contentDescription="Facebook" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

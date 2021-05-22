@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.ace.ace_iitp.UI.entryPoint.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_eventsFragment"
+            app:destination="@id/eventsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right" />
+        <action
+            android:id="@+id/action_mainFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right"/>
+        <action
+            android:id="@+id/action_mainFragment_to_contactFragment"
+            app:destination="@id/contactFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right"/>
+        <action
+            android:id="@+id/action_mainFragment_to_eventInfoFragment"
+            app:destination="@id/eventInfoFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.ace.ace_iitp.UI.eventsFrags.EventsFragment"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events" >
+        <action
+            android:id="@+id/action_eventsFragment_to_eventInfoFragment"
+            app:destination="@id/eventInfoFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right"/>
+        <action
+            android:id="@+id/action_eventsFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right"/>
+        <action
+            android:id="@+id/action_eventsFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right" />
+        <action
+            android:id="@+id/action_eventsFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right"/>
+        <action
+            android:id="@+id/action_eventsFragment_to_contactFragment"
+            app:destination="@id/contactFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/eventInfoFragment"
+        android:name="com.ace.ace_iitp.UI.eventsFrags.EventInfoFragment"
+        android:label="fragment_eventinfo"
+        tools:layout="@layout/events_fragment_eventinfo" >
+        <action
+            android:id="@+id/action_eventInfoFragment_to_eventProblemFragment"
+            app:destination="@id/eventProblemFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right"/>
+        <argument
+            android:name="eventData"
+            app:argType="com.ace.ace_iitp.DataItems.EventsDataItems"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.ace.ace_iitp.UI.feedFrags.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_feedFragment_to_feedSearchFragment"
+            app:destination="@id/feedSearchFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right"/>
+        <action
+            android:id="@+id/action_feedFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right"
+            />
+        <action
+            android:id="@+id/action_feedFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right"/>
+        <action
+            android:id="@+id/action_feedFragment_to_contactFragment"
+            app:destination="@id/contactFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.ace.ace_iitp.UI.eventsFrags.EventSearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_eventInfoFragment"
+            app:destination="@id/eventInfoFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/feedSearchFragment"
+        android:name="com.ace.ace_iitp.UI.feedFrags.FeedSearchFragment"
+        android:label="fragment_feed_search"
+        tools:layout="@layout/fragment_feed_search" />
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.ace.ace_iitp.UI.otherFrags.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_galleryFragment_to_galleryFullscreenFragment"
+            app:destination="@id/galleryFullscreenFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/eventProblemFragment"
+        android:name="com.ace.ace_iitp.UI.eventsFrags.EventProblemFragment"
+        android:label="fragment_event_problem"
+        tools:layout="@layout/fragment_event_problem" >
+        <argument
+            android:name="argumentData"
+            app:argType="com.ace.ace_iitp.DataItems.EventsProblems"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFullscreenFragment"
+        android:name="com.ace.ace_iitp.UI.otherFrags.GalleryFullscreenFragment"
+        android:label="fragment_gallery_fullscreen"
+        tools:layout="@layout/fragment_gallery_fullscreen" >
+        <argument
+            android:name="galleryArray"
+            app:argType="string[]" />
+        <argument
+            android:name="pos"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.ace.ace_iitp.UI.otherFrags.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.ace.ace_iitp.UI.otherFrags.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" />
+</navigation>

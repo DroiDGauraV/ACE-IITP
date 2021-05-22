@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="170dp"
+    android:layout_margin="7dp"
+    android:padding="2dp"
+    tools:ignore="HardcodedText">
+
+    <ImageView
+        android:id="@+id/view_img_banner_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="banner_image"
+        android:scaleType="centerCrop"/>
+
+</androidx.cardview.widget.CardView>

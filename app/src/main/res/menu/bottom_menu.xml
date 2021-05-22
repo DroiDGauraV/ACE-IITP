@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/bottom_home_24"
+        android:title="Home"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/eventsFragment"
+        android:icon="@drawable/bottom_events_24"
+        android:title="Events"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/feedFragment"
+        android:icon="@drawable/bottom_live_stories_24"
+        android:title="Feed"
+        tools:ignore="HardcodedText" />
+
+</menu>

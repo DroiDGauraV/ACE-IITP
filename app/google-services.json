@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "712890911203",
+    "firebase_url": "https://ace-iitp.firebaseio.com",
+    "project_id": "ace-iitp",
+    "storage_bucket": "ace-iitp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712890911203:android:62c6e712ff2659269f78d6",
+        "android_client_info": {
+          "package_name": "com.ace.ace_iitp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712890911203-p928fiidf9bpil2ptmrh1cskcbb5b4oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ3LMuvWlRJcjC_B4gboA2eZQOdRJ9h8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712890911203-p928fiidf9bpil2ptmrh1cskcbb5b4oi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712890911203:android:1801cb38a197382c9f78d6",
+        "android_client_info": {
+          "package_name": "com.example.ace_iitp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712890911203-p928fiidf9bpil2ptmrh1cskcbb5b4oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ3LMuvWlRJcjC_B4gboA2eZQOdRJ9h8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712890911203-p928fiidf9bpil2ptmrh1cskcbb5b4oi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

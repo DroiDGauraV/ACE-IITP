@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".UI.otherFrags.AboutFragment">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="2dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/view_about_toolbar"
+            style="@style/Widget.example.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:textAllCaps="false"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="About Us - ACE"
+            app:titleTextColor="#ffffff" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/view_events_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:background="#A6FFFFFF"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:ignore="HardcodedText">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="What is ACE?"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:layout_margin="16dp"
+                android:text="Association of Civil Engineers is an official club of Department of Civil and Environmental Engineering(DCEE), IIT Patna, whose foundation was laid in the initial days of setting up of the branch by students and faculties with the vision of developing a platform to foster student-faculty interaction outside the world of regular academics, creating a forum for the members of the department to showcase their work and knowledge and enhance their abilities by various workshops and events."
+                android:textColor="#2c2c2c"
+                android:textSize="17sp"/>
+
+            <ImageView
+                android:id="@+id/view_img_about"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                tools:srcCompat="@mipmap/ic_ace_logo_foreground"
+                android:contentDescription="ACE logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:layout_margin="16dp"
+                android:text="What ACE provides?"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="We at ACE build  a healthy environment for faculty-student interaction through a series of events and technical activities throughout the year. The wide-ranging events throughout the academic year sought to bring the people together to share a platform to learn and gain knowledge, improve their skills and develop a healthy environment.\n\n>	It provides a platform to interact with the renowned professors, industrialists and engineers from other organisations.\n\n>	It provides an opportunity to aware students about the recent innovations and the developments in the field of Civil Engineering and their scope.\n\n>	It promotes the development of co-curricular and interpersonal skills.
+                "
+                android:textColor="#2c2c2c"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

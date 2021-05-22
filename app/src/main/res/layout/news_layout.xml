@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_feed_news"
+        android:textColor="#2c2c2c"
+        android:textSize="18sp"
+        android:text="Sample News Sample News Sample News Sample News Sample News Sample News Sample News v"
+        />
+</androidx.cardview.widget.CardView>

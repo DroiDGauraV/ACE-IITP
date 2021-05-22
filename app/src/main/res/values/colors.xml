@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#344955</color>
+    <color name="colorPrimaryLight">#83B1CC</color>
+    <color name="colorPrimaryDark">#232F34</color>
+    <color name="colorAccent">#f9aa33</color>
+    <color name="colorAccentDark">#8E4200</color>
+    <color name="textColorPrimary">@android:color/black</color>
+    <color name="toolbarIconColor">@android:color/white</color>
+    <color name="loginPageBackgroundColor">#FDF6F3</color>
+    <color name="eventListBackgroundColor">#FFFFFF</color>
+    <color name="textInputOutlineColor">#344955</color>
+    <color name="black_overlay">#66000000</color>
+
+
+</resources>

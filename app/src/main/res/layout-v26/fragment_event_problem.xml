@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.eventsFrags.EventProblemFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_problem"
+            style="@style/TextAppearance.Text.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:nestedScrollingEnabled="true"
+            app:collapsedTitleGravity="start"
+            app:collapsedTitleTextAppearance="@style/TextAppearance.Text.Toolbar"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleGravity="top|center_horizontal"
+            app:expandedTitleTextAppearance="@style/TextAppearance.Text.Toolbar"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="true">
+
+
+            <ImageView
+                android:id="@+id/view_img_event_problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                tools:srcCompat="@drawable/image2" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="top"
+                android:background="@drawable/gradient_title_background" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/view_eventsInfo_toolbar_problem"
+                style="@style/Widget.example.Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:backgroundTint="@android:color/transparent"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:titleTextColor="#ffffff" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:background="#A6FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="100dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="3dp">
+
+                <TextView
+                    android:id="@+id/tv_card_title"
+                    style="@style/TextAppearance.Text.Toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Low-Cost Housing"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#262626"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:textColor="#2c2c2c"
+                android:id="@+id/tv_prob_desc"
+                android:justificationMode="inter_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText "
+                android:textSize="15sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="3dp">
+
+                <TextView
+                    style="@style/TextAppearance.Text.Toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Instructions"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#262626"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:textColor="#2c2c2c"
+                android:layout_margin="16dp"
+                android:textSize="15sp"
+                android:id="@+id/tv_prob_instruc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText
+SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText
+SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText SampleText " />
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/view_fab_pdf"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="DOwnload pdf"
+        android:textAlignment="center"
+        app:icon="@drawable/ic_baseline_arrow_downward_24"
+        tools:ignore="HardcodedText" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
